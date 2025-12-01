@@ -6,9 +6,24 @@ namespace ConsoleApp1
 {
     public class Book
     {
-        public string Title { get; set; }
-        public Person Author;
+        protected string Title;
+        protected Person Author;
         DateOnly Data_wydania;
+        public string title
+        {
+            get { return Title; }
+            set { Title = value; }
+        }
+        public Person author
+        {
+            get { return Author; }
+            set { Author = value; }
+        }
+        public DateOnly data_wydania
+        {
+            get { return Data_wydania; }
+            set { Data_wydania = value; }
+        }
         public Book(string tytul, Person autor, DateOnly data_wydania)
         {
             this.Title = tytul;

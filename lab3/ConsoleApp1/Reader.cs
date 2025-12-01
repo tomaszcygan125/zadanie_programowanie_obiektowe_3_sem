@@ -7,8 +7,11 @@ namespace ConsoleApp1
 {
     public class Reader : Person
     {
-    public List<Book> ReedBooks { get;set;} = new List<Book>();
-
+    private List<Book> ReedBooks  = new List<Book>();
+        
+     public List<Book> reedBooks { get { return ReedBooks; }  set {ReedBooks = value; }  }
+     
+    
     public Reader(string firstName, string lastName, int wiek) : base(firstName, lastName, wiek)
     {// automatyczne wywolanie kontruktora bazowego
     }
@@ -16,7 +19,7 @@ namespace ConsoleApp1
         {
             foreach (Book b1  in ReedBooks)
             {
-                Console.WriteLine($"Przeczytana ksiazka tytul: {b1.Title} przez usera: {firstName}");
+                Console.WriteLine($"Przeczytana ksiazka tytul: {b1.title} przez usera: {firstName}");
             }
         }
     
