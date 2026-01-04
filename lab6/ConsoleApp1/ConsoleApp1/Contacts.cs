@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    publi class Contacts
+    public class Contacts
     {
     }
 }
