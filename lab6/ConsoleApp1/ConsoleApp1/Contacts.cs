@@ -19,5 +19,9 @@ namespace ConsoleApp1
             this.Name = Name;
             this.Email = Email;
         }
+        public void Display()
+        {
+            Console.WriteLine($"{Id} {Name} {Email} "); 
+        }
     }
 }
